@@ -70,7 +70,7 @@
                                     </h3>
                                 </td>
                                 <td class="price">
-                                    $ {{ number_format($item['productInfo']->price) }}
+                                    {{ number_format($item['productInfo']->price) }} VND
                                 </td>
                                 <td class="quantity">
                                     <div class="input-group mb-3">
@@ -79,7 +79,7 @@
                                     </div>
                                 </td>
                                 <td class="total">
-                                    $ {{ number_format($item['price']) }}
+                                    {{ number_format($item['price']) }} VND
                                 </td>
                                 <td class="si-close">
                                     <i class="icon-save" onclick="SaveItemListCart({{ $item['productInfo']->id }});">
@@ -117,7 +117,7 @@
                                         Total Price :
                                     </span>
                                     <span>
-                                        $ {{ number_format(Session::get('Cart')->totalPrice) }}
+                                        {{ number_format(Session::get('Cart')->totalPrice) }} VND
                                     </span>
                                 </p>
                             </hr>
@@ -166,7 +166,7 @@
                         </p>
                         <p class="price">
                             <span>
-                                ${{ $item->price }}
+                                {{ $item->price }} VND
                             </span>
                         </p>
                         <p>

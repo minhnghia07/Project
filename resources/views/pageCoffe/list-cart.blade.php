@@ -18,13 +18,13 @@
     <td class="product-name">
       <h3>{{ $item['productInfo']->name_product }}</h3>
     </td>
-    <td class="price">$ {{ number_format($item['productInfo']->price) }}</td>
+    <td class="price">{{ number_format($item['productInfo']->price) }} VND</td>
     <td class="quantity">
       <div class="input-group mb-3">
         <input type="number" id="quanty-item-{{ $item['productInfo']->id }}" onkeypress="return event.charCode >= 48" min="1" class="quantity form-control input-number" value="{{ $item['quanty'] }}" >
       </div>
     </td>
-    <td class="total">$ {{ number_format($item['price']) }}</td>
+    <td class="total">{{ number_format($item['price']) }} VND</td>
     <td class="si-close"><i class="icon-save"  onclick="SaveItemListCart({{ $item['productInfo']->id }});"></i></td>
     <td class="si-close"><i class="icon-close"  onclick="DeleteItemListCart({{ $item['productInfo']->id }});"></i></td>
   </tr><!-- END TR-->
@@ -47,7 +47,7 @@
     <hr>
     <p class="d-flex total-price">
       <span>Total Price : </span>
-      <span>$ {{ number_format(Session::get('Cart')->totalPrice) }}</span>
+      <span>{{ number_format(Session::get('Cart')->totalPrice) }} VND</span>
     </p>
   </div>
   @endif

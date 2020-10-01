@@ -63,7 +63,7 @@
                                     {{ $item->city}}
                                 </td>
                                 <td>
-                                    ${{ number_format($item->total_price) }}
+                                    {{ number_format($item->total_price) }} VND
                                 </td>
                                 <td>
                                     @can('order-add')

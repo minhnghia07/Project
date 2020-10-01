@@ -73,7 +73,7 @@
                   <td class="si-text">
                     <div class="product-selected">
                       <h6>{{ $item['productInfo']->name_product }}</h6>
-                      <p>$ {{ number_format($item['productInfo']->price) }} x {{ $item['quanty'] }}</p>
+                      <p>{{ number_format($item['productInfo']->price) }} x {{ $item['quanty'] }} VND</p>
                     </div>
                   </td>
                   <td class="si-close">
@@ -87,7 +87,7 @@
           </div>
           <div class="select-total">
             <span>Total : </span>
-            <h5>$ {{number_format(Session::get('Cart')->totalPrice)}}</h5>
+            <h5>{{number_format(Session::get('Cart')->totalPrice)}} VND</h5>
             <input hidden id="total-quanty-cart" type="number" value="{{Session::get('Cart')->totalQuanty}}">
           </div>
 

@@ -149,7 +149,7 @@
       <hr>
       <p class="d-flex total-price">
         <span>Total Price : </span>
-        <span>$ {{ number_format(Session::get('Cart')->totalPrice) }}</span>
+        <span>{{ number_format(Session::get('Cart')->totalPrice) }} VND</span>
       </p>
       
 
@@ -213,39 +213,7 @@
      </div>
    </form>
  </div>
- {{-- <div class="sidebar-box ftco-animate">
-  <div class="categories">
-    <h3>Your order </h3>
-    @if (Session::has("Cart") != null)
-
-    <div class="cart-total mb-3">
-     <h3>Cart Totals</h3>
-     <div class="sidebar-box ftco-animate">
-      <span> Product : </span>
-      @foreach(Session::get('Cart')->products as  $item)
-      
-      <p class="text">
-        {{ $item['productInfo']->name_product }}  x ${{ number_format($item['productInfo']->price)}}  x {{ $item['quanty'] }}  
-      </p>
-      @endforeach
-    </div>
-    <p class="d-flex">
-      <span>Total Quanty : </span>
-      <span>{{ Session::get('Cart')->totalQuanty }}</span>
-    </p>
-
-    <hr>
-    <p class="d-flex total-price">
-      <span>Total Price : </span>
-      <span>$ {{ number_format(Session::get('Cart')->totalPrice) }}</span>
-    </p>
-  </div>
-
-  @endif
-  
-  
-</div>
-</div> --}}
+ 
 
 <div class="sidebar-box ftco-animate">
   <h3>Recent Blog</h3>

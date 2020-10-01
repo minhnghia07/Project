@@ -30,7 +30,7 @@
                 </h3>
                 <p class="price">
                     <span>
-                        ${{number_format($proSingle->price)}}
+                        {{number_format($proSingle->price)}} VND
                     </span>
                 </p>
                 <p>
@@ -104,7 +104,7 @@
                         </p>
                         <p class="price">
                             <span>
-                                ${{ number_format($item->price) }}
+                                {{ number_format($item->price) }} VND
                             </span>
                         </p>
                         <p>

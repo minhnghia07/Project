@@ -47,14 +47,14 @@
                             <td>
                                 <img src="{{$product->link_image}}" width="150px" >
                             </td>
-                            <td>{{number_format($item->price)}}<u>$</u></td>
+                            <td>{{number_format($item->price)}}<u>VND</u></td>
                             <td>{{$item->quantity}}</td>
-                            <td>{{number_format($item->price*$item->quantity)}}<u>$</u></td>
+                            <td>{{number_format($item->price*$item->quantity)}}<u>VND</u></td>
                         </tr>
                         @endforeach
                     </tbody>
                 </table>
-                <h4 style="margin: 35px;color: red;">Tổng: {{number_format($bill->total_price)}}<u>$</u></h4>
+                <h4 style="margin: 35px;color: red;">Tổng: {{number_format($bill->total_price)}}<u>VND</u></h4>
             </div> 
             {!! $bill_detail->links() !!}          
         </div>

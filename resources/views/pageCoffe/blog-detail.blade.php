@@ -1,18 +1,15 @@
 @extends('master')
 @section('content')
 <section class="home-slider owl-carousel">
-<div id="fb-root">
-    </div>
-    <script async="" crossorigin="anonymous" defer="" nonce="1teP0OYZ" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0">
-    </script>
+
       <div class="slider-item" style="background-image: url({{ asset('img/bg_3.jpg')}});" data-stellar-background-ratio="0.5">
-      	<div class="overlay"></div>
+        <div class="overlay"></div>
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center">
 
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
-            	<h1 class="mb-3 mt-5 bread">Blog Details</h1>
-	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="blog.html">Blog</a></span> <span>Blog Single</span></p>
+              <h1 class="mb-3 mt-5 bread">Blog</h1>
+              <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog Details</span></p>
             </div>
 
           </div>
